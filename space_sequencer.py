@@ -166,7 +166,7 @@ class SEQUENCER_HT_header(Header):
 
     def draw(self, context):
         layout = self.layout
-        strip = act_strip(context)
+        strip = context.active_sequence_strip
         st = context.space_data
 
         show_region_tool_header = st.show_region_tool_header
